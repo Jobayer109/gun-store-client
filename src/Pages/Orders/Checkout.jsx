@@ -40,6 +40,7 @@ const Checkout = () => {
       .then((data) => {
         if (data.acknowledged) {
           alert('Order submitted')
+          form.reset()
         } console.log(data);
       });
   };
